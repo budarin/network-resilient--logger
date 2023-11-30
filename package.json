@@ -1,0 +1,27 @@
+{
+    "name": "@budarin/network-resilient--logger",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": {
+        "url": "git+https://github.com/budarin/network-resilient--logger.git"
+    },
+    "author": "Vadim Budarin <budarin-vv@yandex.ru>",
+    "bugs": {
+        "url": "https://github.com/budarin/network-resilient--logger/issues"
+    },
+    "homepage": "https://github.com/budarin/network-resilient--logger#readme",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.3.2"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "build": "sh ./tools/build.sh",
+        "prepublish": "npm run build",
+        "npm-publish": "npm run build && npm publish",
+        "upgrade deps": "yarn upgrade-interactive --latest;"
+    }
+}
